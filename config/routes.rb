@@ -1,4 +1,6 @@
 Goaltracker::Application.routes.draw do
+  resources :goal_entries
+
   resources :goals
 
   resources :users

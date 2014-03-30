@@ -1,0 +1,2 @@
+module GoalEntriesHelper
+end
