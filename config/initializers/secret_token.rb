@@ -9,4 +9,17 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Goaltracker::Application.config.secret_key_base = '8902332eca74392290ede160dda71b5239f3354dfa6ce48d9edd59ac3af0a6f5c7885a94d5b18c53b186c7bbb6b626905450cf157b4e69aa2c74c91cdbd327d1'
+require 'securerandom'
+
+def secure_token
+  token_file = Rails.root.join('.secret')
+  if File.exist?(token_file)
+    File.read(token_file).chomp
+  else
+    token = SecureRandom.hex(64)
+    File.write(token_file, token)
+    token
+  end
+end
+
+Goaltracker::Application.config.secret_key_base = secure_token
