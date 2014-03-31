@@ -1,0 +1,17 @@
+<h1>HELLOOOOO</h1>
+Your goals are:<br/>
+<ul>
+<% @goals.each do |goal| %>
+  <li>
+    <%= goal.title %> - <%= link_to 'Add Goal Entry', new_goal_entry_path %>
+  </li> 
+  
+  <ul>
+  <% goal.goal_entries.each do |entry| %>
+    <li><%= entry.status %></li>
+  <% end %>
+  </ul>  
+
+<% end %>
+</ul>
+<%= link_to 'New Goal', new_goal_path %>
