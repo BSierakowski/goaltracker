@@ -1,28 +1,8 @@
-== README
+Things to do:
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+- Get first rspec test working 
+- Make it easy for a user to create new goals for themself
+- Make it easy to record entries for a goal
+- Make it clear which day the entry is for
+- Have users with the ability to login / create accounts
+- Style it
