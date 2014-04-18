@@ -1,8 +1,14 @@
+In Progress:
+
+- Make it easy for a user to create new goals for themself
+
 Things to do:
 
-- Get first rspec test working 
-- Make it easy for a user to create new goals for themself
 - Make it easy to record entries for a goal
 - Make it clear which day the entry is for
 - Have users with the ability to login / create accounts
 - Style it
+
+To done:
+
+-- Get first rspec test working 
