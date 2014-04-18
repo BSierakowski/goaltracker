@@ -3,7 +3,9 @@ Goaltracker::Application.routes.draw do
 
   resources :goals
 
-  resources :users
+  resources :users do 
+    resources :goals
+  end
 
   get 'dashboard' => 'dashboard#index'
 
