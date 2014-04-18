@@ -11,6 +11,8 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
+gem "factory_girl_rails", "~> 4.0"
+gem "pry"
 
 group :test do
   gem 'rspec-rails', '2.13.1'
